@@ -1,6 +1,8 @@
 ---
 title: "Historical horse population in Canada"
 output:
+  html_document: 
+      toc: true
   github_document:
       toc: true
 ---
@@ -8,6 +10,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
+library(knitr)
 ```
 
 ## Aim
@@ -68,7 +71,7 @@ max_horses
 
 Below we zoom in and look at the province of Alberta:
 
-```{r plot province, fig.width=5, fig.height=4}
+```{r plot province, fig.width=5, fig.height=4, fig.cap = "Number of hourses for province of focuse", out.width="50%"}
 province_plot <- horse_pop %>% 
   filter(GEO == "Alberta") %>% 
   ggplot(aes(x = Ref_Date, y = Value)) +
