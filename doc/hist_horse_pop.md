@@ -60,4 +60,4 @@ time point between 1940 - 1972:
 
 Below we zoom in and look at the province of Alberta:
 
-![](hist_horse_pop_files/figure-gfm/plot%20province-1.png)<!-- -->
+<img src="hist_horse_pop_files/figure-gfm/plot province-1.png" title="Number of hourses for province of focuse" alt="Number of hourses for province of focuse" width="50%" />
